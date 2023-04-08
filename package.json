@@ -2,7 +2,7 @@
   "name": "rainer-weisheiten-bot",
   "version": "1.0.0",
   "description": "",
-  "main": "netlify/functions/update.js",
+  "main": "functions/update.js",
   "scripts": {
     "postinstall": "netlify-lambda install",
     "buildNetlify": "netlify-lambda build functions",

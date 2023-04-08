@@ -4,12 +4,16 @@
   "description": "",
   "main": "netlify/functions/update.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "netlify-lambda install",
+    "buildNetlify": "netlify-lambda build functions",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devNetlify": "netlify-lambda serve functions"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-telegram-bot-api": "^0.61.0"
+    "node-telegram-bot-api": "^0.61.0",
+    "netlify-lambda": "^1.6.0"
   }
 }
